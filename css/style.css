@@ -55,10 +55,10 @@ header {
   position: relative; }
   header .title {
     background-image: url("../images/img-main.jpg");
-    height: 500px;
+    height: 250px;
     width: 100%;
     background-size: cover;
-    background-position: 10% 80%; }
+    background-position: center 80%; }
     header .title h1 {
       font-size: 4rem;
       color: #fff;
@@ -116,12 +116,10 @@ footer {
   color: #FFF; }
 
 @media (min-width: 769px) {
-  /* Base
-  ------------------------------------------------------------*/
   /* Header
   ------------------------------------------------------------*/
   header .title {
-    background-position: center 80%; }
+    height: 500px; }
     header .title h1 {
       font-size: 5rem;
       bottom: -100px; }

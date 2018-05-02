@@ -64,10 +64,10 @@ header{
     position:relative;
 	.title{
 	background-image: url("../images/img-main.jpg");
-  height: 500px;
+  height: 250px;
   width: 100%;
   background-size: cover;
-  background-position: 10% 80%;
+  background-position: center 80%;
 	h1{
 	font-size: 4rem;
 	color: #fff;
@@ -140,16 +140,13 @@ footer {
 
 
 // PC
-@media (min-width: 769px) {
-  /* Base
-  ------------------------------------------------------------*/
+@media (min-width: 769px){
   
-
   /* Header
   ------------------------------------------------------------*/
   header{
     .title{
-      background-position: center 80%;
+      height: 500px;
     h1{
       font-size: 5rem;
       bottom: -100px;
