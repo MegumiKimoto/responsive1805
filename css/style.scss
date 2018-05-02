@@ -1,0 +1,170 @@
+@import "compass";
+@import url('https://fonts.googleapis.com/css?family=Abel|Fredoka+One');
+// font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+// colors
+$baseColor: #fbeff6;
+$baseColor02: #fae4f0;
+$subColor: #e678b2;
+$keyColor: #70ade8;
+$fontColor: #4c4c4c;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 62.5%; }
+
+body{
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em;
+  background-color: $baseColor;
+}
+
+a {
+  @include link-colors($keyColor, darken($keyColor, 10%), lighten($keyColor, 5%), darken($keyColor, 10%));
+  text-decoration: none;
+}
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center;
+}
+
+/* Layout
+------------------------------------------------------------*/
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+
+/* Font
+------------------------------------------------------------*/
+.abel {
+  font-family: 'Abel', sans-serif;
+}
+.Fredoka{
+  font-family: 'Fredoka One', cursive;
+	
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Header
+------------------------------------------------------------*/
+header{
+    position:relative;
+	.title{
+	background-image: url("../images/img-main.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: 10% 80%;
+	h1{
+	font-size: 4rem;
+	color: #fff;
+	background-color: $subColor;
+	position: absolute;
+	bottom: -83px;
+    left: 0;
+    right: 0;
+    padding:10px 0;
+		}
+	}
+}
+
+/* Contents
+------------------------------------------------------------*/
+// Common Styles
+section {
+  padding: 140px 0 60px;
+  .container {
+    width: 90%;
+    @extend .block-center;
+  }
+  h2 {
+    @extend .Fredoka;
+    font-size: 4rem;
+    @extend .uppercase;
+    color:$keyColor;
+  }
+}
+
+// info
+#info {
+  background-color: $baseColor02;
+  .container {
+    @include display-flex;
+    justify-content: space-between;
+    @include flex-direction(column);
+  }
+  h2 {
+    margin-bottom: 40px;
+  }
+  .info-box {
+    @include flex(1);
+    margin: 10px 0;
+    padding: 24px;
+  }
+}
+//reserve
+#reserve {
+    padding: 60px 0;
+    p a .btn-text {
+        color:#fff;
+        background: $keyColor;
+        padding: 12px 30px;
+        @include border-radius(5px);
+        &:hover {
+            background-color: darken($keyColor, 10%);
+          }
+    }
+}
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: $subColor;
+  padding: 10px 0;
+  text-align: center;
+  color: #FFF;
+}
+
+
+// PC
+@media (min-width: 769px) {
+  /* Base
+  ------------------------------------------------------------*/
+  
+
+  /* Header
+  ------------------------------------------------------------*/
+  header{
+    .title{
+      background-position: center 80%;
+    h1{
+      font-size: 5rem;
+      bottom: -100px;
+      }
+    }
+  }
+  
+  // info
+  #info {
+    .container {
+      @include flex-direction(row);
+      justify-content: space-between;
+    }
+    .info-box {
+      margin: 0 10px;
+   }
+  }
+}

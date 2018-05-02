@@ -1,0 +1,136 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Abel|Fredoka+One");
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fbeff6; }
+
+a {
+  color: #70ade8;
+  text-decoration: none; }
+  a:visited {
+    color: #4494e1; }
+  a:hover {
+    color: #4494e1; }
+  a:active {
+    color: #86baec; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mb30 {
+  margin-bottom: 30px; }
+
+/* Font
+------------------------------------------------------------*/
+.abel {
+  font-family: 'Abel', sans-serif; }
+
+.Fredoka, section h2 {
+  font-family: 'Fredoka One', cursive; }
+
+.uppercase, section h2 {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+header {
+  position: relative; }
+  header .title {
+    background-image: url("../images/img-main.jpg");
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: 10% 80%; }
+    header .title h1 {
+      font-size: 4rem;
+      color: #fff;
+      background-color: #e678b2;
+      position: absolute;
+      bottom: -83px;
+      left: 0;
+      right: 0;
+      padding: 10px 0; }
+
+/* Contents
+------------------------------------------------------------*/
+section {
+  padding: 140px 0 60px; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 4rem;
+    color: #70ade8; }
+
+#info {
+  background-color: #fae4f0; }
+  #info .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #info h2 {
+    margin-bottom: 40px; }
+  #info .info-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 24px; }
+
+#reserve {
+  padding: 60px 0; }
+  #reserve p a .btn-text {
+    color: #fff;
+    background: #70ade8;
+    padding: 12px 30px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; }
+    #reserve p a .btn-text:hover {
+      background-color: #4494e1; }
+
+/* Footer
+------------------------------------------------------------*/
+footer {
+  background-color: #e678b2;
+  padding: 10px 0;
+  text-align: center;
+  color: #FFF; }
+
+@media (min-width: 769px) {
+  /* Base
+  ------------------------------------------------------------*/
+  /* Header
+  ------------------------------------------------------------*/
+  header .title {
+    background-position: center 80%; }
+    header .title h1 {
+      font-size: 5rem;
+      bottom: -100px; }
+
+  #info .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #info .info-box {
+    margin: 0 10px; } }
+
+/*# sourceMappingURL=style.css.map */
